@@ -1,0 +1,3 @@
+MOV B,#10H
+MOV A,B
+MOV R1, A

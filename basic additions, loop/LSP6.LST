@@ -1,0 +1,28 @@
+A51 MACRO ASSEMBLER  LSP6                                                                 08/01/2018 15:30:02 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN LSP6.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE LSP6.ASM SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 74AA              1     MOV A, #0AAH
+0002 75F005            2     MOV B, #05H
+0005 84                3     DIV AB
+                       4     END
+A51 MACRO ASSEMBLER  LSP6                                                                 08/01/2018 15:30:02 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

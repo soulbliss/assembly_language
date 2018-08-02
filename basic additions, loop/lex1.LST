@@ -1,0 +1,28 @@
+A51 MACRO ASSEMBLER  LEX1                                                                 08/01/2018 15:37:22 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN lex1.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE lex1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7424              1     MOV A, #24H
+0002 75F024            2     MOV B, #24H
+0005 25F0              3     ADD A,B
+                       4     END
+A51 MACRO ASSEMBLER  LEX1                                                                 08/01/2018 15:37:22 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

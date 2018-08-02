@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  LEX5                                                                 08/01/2018 16:22:58 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN LEX5.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE LEX5.ASM SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 755001            1     MOV 50H, #01H
+0003 755102            2     MOV 51H, #02H
+0006 755203            3     MOV 52H, #03H
+0009 755301            4     MOV 53H, #01H
+000C 755401            5     MOV 54H, #01H
+000F 755501            6     MOV 55H, #01H
+0012 7805              7     MOV R0, #05H
+0014 7950              8     MOV R1, #50H
+                       9     
+0016 27               10     LOOP: ADD A, @R1
+0017 09               11     INC R1
+0018 D8FC             12     DJNZ R0, LOOP
+                      13     END
+A51 MACRO ASSEMBLER  LEX5                                                                 08/01/2018 16:22:58 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0016H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

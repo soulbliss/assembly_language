@@ -1,0 +1,34 @@
+A51 MACRO ASSEMBLER  LEX4                                                                 08/01/2018 16:18:25 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN lex4.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE lex4.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 900134            1     MOV DPTR, #0134H
+0003 7449              2     MOV A, #49H
+0005 7802              3     MOV R0, #02H
+0007 2582              4     ADD A, DPL
+0009 FB                5     MOV R3, A
+000A E583              6     MOV A, DPH
+000C 38                7     ADDC A, R0
+                       8     END
+                             
+A51 MACRO ASSEMBLER  LEX4                                                                 08/01/2018 16:18:25 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DPH. . . . . . . .  D ADDR   0083H   A   
+DPL. . . . . . . .  D ADDR   0082H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

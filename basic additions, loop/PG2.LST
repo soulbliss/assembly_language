@@ -1,0 +1,28 @@
+A51 MACRO ASSEMBLER  PG2                                                                  08/01/2018 14:35:30 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN PG2.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE PG2.ASM SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 75F010            1     MOV B,#10H
+0003 E5F0              2     MOV A,B
+0005 F9                3     MOV R1, A
+*** WARNING #A41 IN 3 (PG2.ASM, LINE 3): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  PG2                                                                  08/01/2018 14:35:30 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

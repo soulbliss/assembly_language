@@ -1,0 +1,4 @@
+MOV A, #24H
+MOV B, #24H
+ADD A,B
+END
