@@ -1,0 +1,29 @@
+A51 MACRO ASSEMBLER  EX3_3                                                                08/23/2018 16:14:02 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN ex3_3.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex3_3.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 742D              1     MOV A,#45d
+0002 F9                2     MOV R1, A
+0003 75F010            3     MOV B,#16d
+0006 84                4     DIV AB
+                       5     END
+A51 MACRO ASSEMBLER  EX3_3                                                                08/23/2018 16:14:02 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

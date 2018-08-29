@@ -1,0 +1,59 @@
+A51 MACRO ASSEMBLER  EX_3_2                                                               08/23/2018 14:48:53 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN ex_3_2.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex_3_2.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 755003            1     MOV 50H, #03H
+0003 755104            2     MOV 51H, #04H
+0006 755205            3     MOV 52H, #05H
+0009 755306            4     MOV 53H, #06H
+000C 755407            5     MOV 54H, #07H
+                       6     
+000F 7850              7     MOV R0, #50H
+0011 7905              8     MOV R1, #05H
+0013 7A00              9     MOV R2, #00H ; Odd
+0015 7B00             10     MOV R3, #00H  ; Even
+                      11     
+0017 75F002           12     LOOP: MOV B, #02H
+001A E6               13               MOV A, @R0
+001B FC               14               MOV R4, A
+001C 84               15               DIV AB
+001D ADF0             16               MOV R5, B
+001F BD0005           17               CJNE R5, #00H, ODD
+0022 EC               18               MOV A, R4
+0023 2B               19               ADD A, R3
+0024 FB               20               MOV R3, A
+0025 8003             21               SJMP FINAL
+                      22               
+0027 EC               23     ODD: MOV A, R4
+0028 2A               24              ADD A, R2
+0029 FA               25              MOV R2, A
+                      26              
+002A 08               27              FINAL:INC R0
+002B D9EA             28              DJNZ R1, LOOP
+                      29              END
+                                             
+                             
+                             
+A51 MACRO ASSEMBLER  EX_3_2                                                               08/23/2018 14:48:53 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+FINAL. . . . . . .  C ADDR   002AH   A   
+LOOP . . . . . . .  C ADDR   0017H   A   
+ODD. . . . . . . .  C ADDR   0027H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

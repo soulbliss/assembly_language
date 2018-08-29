@@ -1,0 +1,51 @@
+A51 MACRO ASSEMBLER  EX_2_4                                                               08/23/2018 16:37:45 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN ex_2_4.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex_2_4.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+0000 755003            2     MOV 50H, #03H
+0003 755133            3     MOV 51H, #33H
+0006 755240            4     MOV 52H, #40H
+0009 755313            5     MOV 53H, #13H
+000C 755420            6     MOV 54H, #20H
+                       7     
+000F 7C05              8     MOV R4, #05H
+0011 7B05              9     AGAIN: MOV R3, #05H
+0013 7850             10     MOV R0, #50H
+0015 C3               11     CLR C
+                      12     
+0016 E6               13     DOWN: MOV A,@R0
+0017 F9               14     MOV R1, A
+0018 08               15     INC R0
+0019 99               16     SUBB A, R1
+001A 4005             17     JC SKIP
+001C E6               18     MOV A, @R0
+001D 18               19     DEC R0
+001E E9               20     MOV A,R1
+001F 08               21     INC R0
+0020 F6               22     MOV @R0,A
+0021 DBF3             23     SKIP: DJNZ R3, DOWN
+0023 DCEC             24     DJNZ R4, AGAIN
+                      25     END
+A51 MACRO ASSEMBLER  EX_2_4                                                               08/23/2018 16:37:45 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0011H   A   
+DOWN . . . . . . .  C ADDR   0016H   A   
+SKIP . . . . . . .  C ADDR   0021H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

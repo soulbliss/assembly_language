@@ -1,0 +1,53 @@
+A51 MACRO ASSEMBLER  EX2_3                                                                08/08/2018 16:58:22 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+NO OBJECT MODULE REQUESTED
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex2_3.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 750710            1     MOV 07H, #10H
+0003 750620            2     MOV 06H, #20H
+0006 750528            3     MOV 05H, #28H
+0009 7807              4     MOV R0, #07H
+                       5     
+                       6     
+000B 750410            7     MOV 04H, #10H
+000E 750320            8     MOV 03H, #20H
+0011 750228            9     MOV 02H, #28H
+                      10     
+0014 7900             11     MOV R1, #00H
+                      12     
+0016                  13     LOOP: MOV R1,  
+*** _______________________________^
+*** _____________________________________^
+*** ERROR #A38 IN 13 (ex2_3.asm, LINE 13): NUMBER OF OPERANDS DOES NOT MATCH INSTRUCTION
+*** ERROR #A9 IN 13 (ex2_3.asm, LINE 13): SYNTAX ERROR
+                      14     
+                      15     ;POP 0
+                      16     ;POP 1
+                      17     ;POP 2
+                      18     
+                      19     ;END
+                      20             
+                      21     
+0016                  22     LOOP: 
+*** _________________________^
+*** ERROR #A8 IN 22 (ex2_3.asm, LINE 22): ATTEMPT TO DEFINE AN ALREADY DEFINED LABEL
+*** WARNING #A41 IN 22 (ex2_3.asm, LINE 22): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  EX2_3                                                                08/08/2018 16:58:22 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0016H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 3 ERROR(S)

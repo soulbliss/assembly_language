@@ -1,0 +1,32 @@
+A51 MACRO ASSEMBLER  E1                                                                   08/02/2018 10:04:15 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\E1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE D:\160929212 and 160929206\E1.asm SET(SMALL) DEBUG PRINT(.\E1.lst) OBJE
+                      CT(.\E1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7425              1     MOV A, #25H
+0002 75F020            2     MOV B, #20H
+0005 25F0              3     ADD A,B
+0007 D4                4     DA A
+0008 80FE              5     XYZ: SJMP XYZ
+*** WARNING #A41 IN 5 (D:\160929212 and 160929206\E1.asm, LINE 5): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  E1                                                                   08/02/2018 10:04:15 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+XYZ. . . . . . . .  C ADDR   0008H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

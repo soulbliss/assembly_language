@@ -1,0 +1,7 @@
+
+;MOV R0,#00000101b
+;MOV A,R0
+;RRC A
+;XRL A,R0
+;END
+

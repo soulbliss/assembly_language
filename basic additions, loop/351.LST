@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  351                                                                  08/23/2018 16:28:38 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN 351.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 351.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;MOV R0,#00000101b
+                       2     ;MOV A,R0
+                       3     ;RRC A
+                       4     ;XRL A,R0
+                       5     ;END
+                       6     
+0000 7907              7     MOV R1, #07H
+0002 E9                8     MOV A,R1
+0003 7808              9     MOV R0, #08H
+0005                  10     PXOR:
+0005 FA               11             MOV R2,A
+0006 C3               12             CLR C
+0007 13               13             RRC A
+0008 6A               14             XRL A,R2
+0009 D8FA             15             DJNZ R0, PXOR
+000B 8502F0           16     MOV B, 02H
+                      17     END
+A51 MACRO ASSEMBLER  351                                                                  08/23/2018 16:28:38 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+PXOR . . . . . . .  C ADDR   0005H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,69 @@
+A51 MACRO ASSEMBLER  EX3_1                                                                08/23/2018 14:53:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN ex3_1.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex3_1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 755003            1     MOV 50H, #03H
+0003 755180            2     MOV 51H, #80H
+0006 755240            3     MOV 52H, #40H
+0009 755300            4     MOV 53H, #00H
+000C 755495            5     MOV 54H, #95H
+                       6     
+                       7     
+000F 7850              8     MOV R0,#50H
+0011 7D05              9     MOV R5,#5H
+0013 7A30             10     MOV R2,#30H   ;POS
+0015 7B60             11     MOV R3,#60H        ; NEG
+0017 7C15             12     MOV R4,#15H             ;ZER
+                      13     
+0019 E6               14     LOOP: MOV A,@R0
+001A 20E713           15               JB ACC.7, NEG1
+001D B40008           16               CJNE A, #00H, POS1
+0020 8CF0             17               MOV B, R4
+0022 A9F0             18               MOV R1, B
+0024 F7               19               MOV @R1, A
+0025 0C               20               INC R4
+0026 800E             21               SJMP FINAL
+                      22             
+0028                  23     POS1:
+0028 8AF0             24         MOV B, R2
+002A A9F0             25             MOV R1, B
+002C F7               26             MOV @R1, A
+002D 0A               27             INC R2
+002E 8006             28             SJMP FINAL
+                      29             
+0030                  30     NEG1:
+0030 8BF0             31             MOV B, R3
+0032 A9F0             32             MOV R1, B
+0034 F7               33             MOV @R1, A
+0035 0B               34             INC R3
+                      35     
+0036                  36     FINAL: 
+0036 08               37             INC R0
+0037 DDE0             38             DJNZ R5, LOOP
+                      39             END
+                                       
+A51 MACRO ASSEMBLER  EX3_1                                                                08/23/2018 14:53:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+B. . . . . . . . .  D ADDR   00F0H   A   
+FINAL. . . . . . .  C ADDR   0036H   A   
+LOOP . . . . . . .  C ADDR   0019H   A   
+NEG1 . . . . . . .  C ADDR   0030H   A   
+POS1 . . . . . . .  C ADDR   0028H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

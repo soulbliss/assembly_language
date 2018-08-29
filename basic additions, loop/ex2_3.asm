@@ -1,0 +1,22 @@
+MOV 07H, #10H
+MOV 06H, #20H
+MOV 05H, #28H
+MOV R0, #07H
+
+
+MOV 04H, #10H
+MOV 03H, #20H
+MOV 02H, #28H
+
+MOV R1, #00H
+
+LOOP: MOV R1,  
+
+;POP 0
+;POP 1
+;POP 2
+
+;END
+	
+
+LOOP: 

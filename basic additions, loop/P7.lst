@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  P7                                                                   08/02/2018 09:39:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\P7.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE D:\160929212 and 160929206\P7.asm SET(SMALL) DEBUG PRINT(.\P7.lst) OBJE
+                      CT(.\P7.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 750035            1     MOV 00H, #35H
+0003 750156            2     MOV 01H, #56H
+0006 75023F            3     MOV 02H, #3FH
+0009 750350            4     MOV 03H, #50H
+000C 7E33              5     MOV R6, #33H
+000E 7F63              6     MOV R7, #63H
+0010 C006              7     PUSH 6
+0012 C001              8     PUSH 1
+0014 C003              9     PUSH 3
+0016 D004             10     POP 4
+0018 D002             11     POP 2
+001A 80FE             12     XYZ: SJMP XYZ
+*** WARNING #A41 IN 12 (D:\160929212 and 160929206\P7.asm, LINE 12): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  P7                                                                   08/02/2018 09:39:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+XYZ. . . . . . . .  C ADDR   001AH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

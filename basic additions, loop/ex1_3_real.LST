@@ -1,0 +1,51 @@
+A51 MACRO ASSEMBLER  EX1_3_REAL                                                           08/08/2018 15:13:00 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN ex1_3_real.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex1_3_real.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     ;MOV 40H, #60H
+                       3     ;MOV 41H, #60H
+                       4     ;MOV 42H, #60H
+                       5     ;MOV 43H, #60H
+                       6     ;MOV 44H, #60H
+                       7     ;MOV 45H, #60H
+                       8     
+                       9     ;MOV 50H, #60H
+                      10     ;MOV R1, #50H
+                      11     ;MOV 40H, @R1
+                      12     ;MOV 41H, @R1
+                      13     ;MOV 42H, @R1
+                      14     ;MOV 43H, @R1
+                      15     ;MOV 44H, @R1
+                      16     ;MOV 45H, @R1
+                      17     ;END
+                      18     
+                      19     
+0000 7905             20     MOV R1, #005H
+0002 7840             21     MOV R0, #040H
+                      22     
+0004 7660             23     LOOP: MOV @R0, #60H
+0006 08               24     INC R0
+0007 D9FB             25     DJNZ R1, LOOP
+                      26     END
+                             
+A51 MACRO ASSEMBLER  EX1_3_REAL                                                           08/08/2018 15:13:00 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0004H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

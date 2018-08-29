@@ -1,0 +1,29 @@
+A51 MACRO ASSEMBLER  EX3_5_1                                                              08/23/2018 15:10:24 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN ex3_5-1.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex3_5-1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 C3                1     CLR C
+0001 7805              2     MOV R0,#00000101b
+0003 E8                3     MOV A,R0
+0004 13                4     RRC A
+0005 68                5     XRL A,R0
+                       6     END
+A51 MACRO ASSEMBLER  EX3_5_1                                                              08/23/2018 15:10:24 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

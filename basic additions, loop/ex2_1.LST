@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  EX2_1                                                                08/08/2018 16:31:20 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN ex2_1.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex2_1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7444              1     MOV A, #44H
+0002 F9                2     MOV R1, A
+0003 75F055            3     MOV B, #55H
+0006 95F0              4     SUBB A, B
+0008 4002              5     JC LOOP
+000A 5012              6     JNC final
+                       7     
+000C                   8     LOOP:
+000C E9                9     MOV A, R1
+000D FC               10     MOV R4, A
+000E 7499             11     MOV A, #99H
+0010 9C               12     SUBB A, R4
+0011 04               13     INC A
+0012 F8               14     MOV R0, A
+0013 E5F0             15     MOV A, B
+0015 FB               16     MOV R3, A
+0016 7499             17     MOV A, #99H
+0018 9B               18     SUBB A,R3
+0019 F5F0             19     MOV B, A
+001B E8               20     MOV A, R0
+001C 95F0             21     SUBB A, B
+001E                  22     final:
+001E D4               23     DA A
+                      24     END
+A51 MACRO ASSEMBLER  EX2_1                                                                08/08/2018 16:31:20 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+FINAL. . . . . . .  C ADDR   001EH   A   
+LOOP . . . . . . .  C ADDR   000CH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

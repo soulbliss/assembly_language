@@ -1,0 +1,4 @@
+MOV A,#99d
+MOV B,#16d
+DIV AB
+END
