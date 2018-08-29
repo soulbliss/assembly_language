@@ -1,13 +1,21 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        08/01/2018  16:25:36  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/02/2018  10:04:16  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-C:\KEIL_V5\C51\BIN\BL51.EXE STARTUP.obj, lex4.obj TO progect1
+C:\KEIL_V5\C51\BIN\BL51.EXE STARTUP.obj, .\P1.obj, .\P2.obj, .\P3.obj, .\P4.obj, .\P5.obj, .\P6.obj, .\P7.obj, .\E1.obj 
+>> TO progect1
 
 
 INPUT MODULES INCLUDED:
   STARTUP.obj (?C_STARTUP)
-  lex4.obj (LEX4)
+  .\P1.obj (P1)
+  .\P2.obj (P2)
+  .\P3.obj (P3)
+  .\P4.obj (P4)
+  .\P5.obj (P5)
+  .\P6.obj (P6)
+  .\P7.obj (P7)
+  .\E1.obj (E1)
 
 
 LINK MAP OF MODULE:  progect1 (?C_STARTUP)
@@ -22,8 +30,15 @@ LINK MAP OF MODULE:  progect1 (?C_STARTUP)
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
-* OVERLAP * CODE    0000H     000DH     ABSOLUTE     
-                    000DH     07F3H                  *** GAP ***
+* OVERLAP * CODE    0000H     000BH     ABSOLUTE     
+* OVERLAP * CODE    0000H     000AH     ABSOLUTE     
+* OVERLAP * CODE    0000H     000AH     ABSOLUTE     
+* OVERLAP * CODE    0000H     000BH     ABSOLUTE     
+* OVERLAP * CODE    0000H     0008H     ABSOLUTE     
+* OVERLAP * CODE    0000H     0008H     ABSOLUTE     
+* OVERLAP * CODE    0000H     001CH     ABSOLUTE     
+* OVERLAP * CODE    0000H     000AH     ABSOLUTE     
+                    001CH     07E4H                  *** GAP ***
             CODE    0800H     000CH     UNIT         ?C_C51STARTUP
 
 
@@ -44,6 +59,9 @@ SYMBOL TABLE OF MODULE:  progect1 (?C_STARTUP)
   C:0000H         PUBLIC        ?C_STARTUP
   D:00E0H         SYMBOL        ACC
   D:00F0H         SYMBOL        B
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/02/2018  10:04:16  PAGE 2
+
+
   D:0083H         SYMBOL        DPH
   D:0082H         SYMBOL        DPL
   N:0000H         SYMBOL        IBPSTACK
@@ -59,9 +77,6 @@ SYMBOL TABLE OF MODULE:  progect1 (?C_STARTUP)
   D:00A0H         SYMBOL        PPAGE_SFR
   D:0081H         SYMBOL        SP
   C:0800H         SYMBOL        STARTUP1
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/01/2018  16:25:36  PAGE 2
-
-
   N:0000H         SYMBOL        XBPSTACK
   N:0000H         SYMBOL        XBPSTACKTOP
   N:0000H         SYMBOL        XDATALEN
@@ -75,21 +90,129 @@ SYMBOL TABLE OF MODULE:  progect1 (?C_STARTUP)
   C:0809H         LINE#         196
   -------         ENDMOD        ?C_STARTUP
 
-  -------         MODULE        LEX4
-  D:0083H         SYMBOL        DPH
-  D:0082H         SYMBOL        DPL
+  -------         MODULE        P1
+  C:0009H         SYMBOL        STOP
   C:0000H         LINE#         1
-  C:0003H         LINE#         2
+  C:0002H         LINE#         2
+  C:0003H         LINE#         3
+  C:0004H         LINE#         4
+  C:0007H         LINE#         5
+  C:0008H         LINE#         6
+  C:0009H         LINE#         7
+  -------         ENDMOD        P1
+
+  -------         MODULE        P2
+  C:0008H         SYMBOL        HERE
+  C:0000H         LINE#         1
+  C:0002H         LINE#         2
+  C:0004H         LINE#         3
+  C:0005H         LINE#         4
+  C:0007H         LINE#         5
+  C:0008H         LINE#         6
+  -------         ENDMOD        P2
+
+  -------         MODULE        P3
+  D:00F0H         SYMBOL        B
+  C:0008H         SYMBOL        XYZ
+  C:0000H         LINE#         1
+  C:0002H         LINE#         2
   C:0005H         LINE#         3
   C:0007H         LINE#         4
-  C:0009H         LINE#         5
-  C:000AH         LINE#         6
-  C:000CH         LINE#         7
-  -------         ENDMOD        LEX4
+  C:0008H         LINE#         5
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/02/2018  10:04:16  PAGE 3
+
+
+  -------         ENDMOD        P3
+
+  -------         MODULE        P4
+  C:0009H         SYMBOL        STOP
+  C:0000H         LINE#         1
+  C:0001H         LINE#         2
+  C:0003H         LINE#         3
+  C:0005H         LINE#         4
+  C:0006H         LINE#         5
+  C:0008H         LINE#         6
+  C:0009H         LINE#         7
+  -------         ENDMOD        P4
+
+  -------         MODULE        P5
+  D:00F0H         SYMBOL        B
+  C:0006H         SYMBOL        STOP
+  C:0000H         LINE#         1
+  C:0002H         LINE#         2
+  C:0005H         LINE#         3
+  C:0006H         LINE#         4
+  -------         ENDMOD        P5
+
+  -------         MODULE        P6
+  C:0006H         SYMBOL        ABC
+  D:00F0H         SYMBOL        B
+  C:0000H         LINE#         1
+  C:0002H         LINE#         2
+  C:0005H         LINE#         3
+  C:0006H         LINE#         4
+  -------         ENDMOD        P6
+
+  -------         MODULE        P7
+  C:001AH         SYMBOL        XYZ
+  C:0000H         LINE#         1
+  C:0003H         LINE#         2
+  C:0006H         LINE#         3
+  C:0009H         LINE#         4
+  C:000CH         LINE#         5
+  C:000EH         LINE#         6
+  C:0010H         LINE#         7
+  C:0012H         LINE#         8
+  C:0014H         LINE#         9
+  C:0016H         LINE#         10
+  C:0018H         LINE#         11
+  C:001AH         LINE#         12
+  -------         ENDMOD        P7
+
+  -------         MODULE        E1
+  D:00F0H         SYMBOL        B
+  C:0008H         SYMBOL        XYZ
+  C:0000H         LINE#         1
+  C:0002H         LINE#         2
+  C:0005H         LINE#         3
+  C:0007H         LINE#         4
+  C:0008H         LINE#         5
+  -------         ENDMOD        E1
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/02/2018  10:04:16  PAGE 4
+
 
 *** WARNING L5: CODE SPACE MEMORY OVERLAP
     FROM:    0000H
     TO:      0002H
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000AH
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000AH
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000AH
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000AH
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000AH
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000AH
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      001BH
 
 *** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
     SYMBOL:  ?C_START
@@ -101,8 +224,8 @@ SYMBOL TABLE OF MODULE:  progect1 (?C_STARTUP)
     ADDRESS: 080AH
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001CH BYTE ( 1%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 006FH BYTE ( 5%) *
 ******************************************************************************
 
-Program Size: data=9.0 xdata=0 code=28
-LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)
+Program Size: data=9.0 xdata=0 code=111
+LINK/LOCATE RUN COMPLETE.  10 WARNING(S),  0 ERROR(S)

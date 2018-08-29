@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  LEX5                                                                 08/01/2018 16:22:58 PAGE     1
+A51 MACRO ASSEMBLER  LEX5                                                                 08/08/2018 15:09:31 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.02b
@@ -13,14 +13,15 @@ LOC  OBJ            LINE     SOURCE
 0009 755301            4     MOV 53H, #01H
 000C 755401            5     MOV 54H, #01H
 000F 755501            6     MOV 55H, #01H
-0012 7805              7     MOV R0, #05H
-0014 7950              8     MOV R1, #50H
-                       9     
-0016 27               10     LOOP: ADD A, @R1
-0017 09               11     INC R1
-0018 D8FC             12     DJNZ R0, LOOP
-                      13     END
-A51 MACRO ASSEMBLER  LEX5                                                                 08/01/2018 16:22:58 PAGE     2
+                       7     
+0012 7805              8     MOV R0, #05H
+0014 7950              9     MOV R1, #50H
+                      10     
+0016 27               11     LOOP: ADD A, @R1
+0017 09               12     INC R1
+0018 D8FC             13     DJNZ R0, LOOP
+                      14     END
+A51 MACRO ASSEMBLER  LEX5                                                                 08/08/2018 15:09:31 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------

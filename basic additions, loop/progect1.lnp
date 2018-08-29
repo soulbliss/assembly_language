@@ -1,3 +1,10 @@
 "STARTUP.obj",
-"lex4.obj" 
+".\P1.obj",
+".\P2.obj",
+".\P3.obj",
+".\P4.obj",
+".\P5.obj",
+".\P6.obj",
+".\P7.obj",
+".\E1.obj" 
 TO "progect1" 
